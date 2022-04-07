@@ -96,6 +96,12 @@ p,
 .about-items:hover {
   background-color: #7562E0;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 370ms;
+  transform: scale(1.2);
+}
+.about-items:hover {
+  transform: scale(1.1);
 }
 
 /*!header */
@@ -123,10 +129,13 @@ p,
 }
 
 .header-nav-link:hover {
-  color: #7562E0;
+  /* color: #7562E0; */
   transition-property: color;
   transition-duration: 370ms;
-
+  background-color: #7562E0;
+  padding: .4em;
+  border-radius: 8px;
+  font-weight: 400;
 }
 
 .header-container {
@@ -256,11 +265,7 @@ p,
 .about-items:not(:last-child) {
   padding-right: 16px;
 }
-
-.active {
-  background-color: #7562E0;
-}
-
+ 
 .about-name {
   font-size: 24px;
   margin-top: 25px;
